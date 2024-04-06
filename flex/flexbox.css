@@ -1,0 +1,48 @@
+.container {
+  display: flex; /*aplica la tecnica flexbox a sus hijos */
+  flex-direction: row; /*la direccion de las cajas en el eje principal x*/
+  flex-wrap: wrap; /*salto de columnas , wrap seria acomodado automatico de acuerdo al max-widht*/
+  justify-content: space-around; /* distribucion en el eje x*/
+  align-items: space-around; /*distribucion sobre el eje y*/
+  /*
+  center: centra de forma absoluta
+  flex-end: a la derecha
+    flex-start: a la izquierda 
+    space-around: distribuye equitativamente de acuerdo a las medidas y contenido 
+    space-between: de acuerdo al espacio intermedio 
+  */
+
+  background-color: #8b007b;
+  padding: 3px;
+}
+.hijo1 {
+  max-width: 25%; /*ancho de capa, usando la etiqueta para flexbox*/
+  flex: 1 1 100%;
+  /*   order: 1;
+ */
+  background-color: #ccff00;
+  color: #0a0a0a;
+  margin: 4px;
+  padding: 5px;
+}
+
+.hijo2 {
+  max-width: 40%; /*ancho de capa, usando la etiqueta para flexbox*/
+  flex: 1 1 100%;
+  /*   order: 0; */
+  background-color: #ff4d00;
+  color: #f0e9e9;
+  margin: 4px;
+  padding: 5px;
+}
+
+.publicidad {
+  position: fixed; /*posicionamiento de la capa*/
+
+  /* top: 25px; distancia superior del borde la pantalla */
+  bottom: 1px; /*distancia inferior del borde la pantalla*/
+  /* left: 25px; /*distancia borde izquierdo de la pantalla
+  right: 25px; /*distancia borde derecho de la pantalla */
+  background-color: rgb(255, 119, 0);
+  color: black;
+}
